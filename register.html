@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <nav>
+        <p><a href="./index.html"><button><b>Go back to Homepage</b></button></a></p>
+        Already registered? <a href="./login.html"><button><b style="color: chartreuse;">Login here</b></button></a>
+        <h2>register here using fieldset</h2>
+    </nav>
+    <main>
+        <form action="register" method="post">
+            <fieldset>
+                <label for="Name">Name</label>
+                <input type="text" name="Name" required placeholder="Enter your name here"><br><hr>
+                <label for="Email">Email</label>
+                <input type="email" name="email" required placeholder="Enter your email here"><br><hr>
+                <label for="password">password</label>
+                <input type="password" name="password" required min="8" placeholder="Enter your password here"><br><hr>
+                <label for="file">Upload your picture</label>
+                <input type="file" name="picture" id="picture"><br><br>
+                <textarea name="more info" id="more info" cols="30" rows="10">Tell us more about you</textarea>
+            </fieldset><br>
+            <button>submit</button>
+
+        </form>
+    </main>
+    
+</body>
+</html>
